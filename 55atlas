@@ -2,11 +2,11 @@
 # version 1.0
 
 #Create logfile
-if [ ! -e /sdcard/aconf.log ] ;then
-    touch /sdcard/aconf.log
+if [ ! -e /sdcard/vconf.log ] ;then
+    touch /sdcard/vconf.log
 fi
-echo "" >> /sdcard/aconf.log
-echo "`date +%Y-%m-%d_%T` Device rebooted" >> /sdcard/aconf.log
+echo "" >> /sdcard/vconf.log
+echo "`date +%Y-%m-%d_%T` Device rebooted" >> /sdcard/vconf.log
 
-# execute atlas.sh
-sh -x /system/bin/atlas.sh -ua
+# execute vmapper.sh
+sh -x /system/bin/vmapper.sh -ua
